@@ -19,7 +19,7 @@ int main()
         for(int i=t-3;i>=0;i--){
             cout<<arr[i]<<" ";
         }
-        cout<<arr[t-2]<<"\n";
+        cout<<arr[t-2]<<endl;
     }
     return 0;
 }
