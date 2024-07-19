@@ -7,6 +7,6 @@ int main()
     long long int n,res;
     cin>>n;
     res=pow(2,n+1)-2;
-    cout<<res<<endl;
+    cout<<res<<"\n";
     return 0;
 }

@@ -6,7 +6,7 @@ int main()
     long long int t;
     cin>>t;
     while(t--){
-        long long int x,y,a,b;
+        long long int x , y, a, b;
         cin>>x>>y>>a>>b;
         long long int total=0;
         if(x>y){
