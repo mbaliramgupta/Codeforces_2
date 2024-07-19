@@ -13,6 +13,7 @@ int solve(){
         while(k--){
             cin>>y;
         }
+        
         if(i<2){
             maxo=max(maxo,(y-x)*h);
         }
