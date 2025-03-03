@@ -11,10 +11,9 @@ int main() {
     cin >> w >> h >> n;
     
     ll s = 1, e = 1;
-    // Find upper bound for e
+ 
     while (!find(e, w, h, n)) e *= 2;
 
-    // Binary search for minimum num
     while (e > s + 1) {
         ll mid = (s + e) / 2;
         if (find(mid, w, h, n)) {

@@ -9,8 +9,8 @@ bool check(ll mid, const vector<int>& diff_v, ll h) {
     for (const auto& x : diff_v) {
         total += min(mid, (ll)x);
     }
-    total += mid; // Updated total calculation
-    return total >= h; // Corrected return statement
+    total += mid; 
+    return total >= h; 
 }
 
 ll solve() {
@@ -28,7 +28,7 @@ ll solve() {
         diff_v[i] = diff;
     }
 
-    ll i = 0, j = 1e18; // Adjusted binary search initialization
+    ll i = 0, j = 1e18; 
     while (i < j) {
         ll mid = (i + j) / 2;
         if (check(mid, diff_v, h)) {
@@ -38,14 +38,13 @@ ll solve() {
         }
     }
 
-    return i; // Ensured function returns a value
-}
+    return i; 
 
 int main() {
     int t;
     cin >> t;
     while (t--) {
-        cout << solve() << "\n"; // Corrected output formatting
+        cout << solve() << "\n"; 
     }
     return 0;
 }

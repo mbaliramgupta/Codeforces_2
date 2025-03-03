@@ -7,7 +7,7 @@ ll check(ll mid,ll n,ll h,vector<ll>attack,vector<ll>cooldown){
            for(int i=0;i<n;i++){
                ll total=1+(mid-1)/cooldown[i];
                sum+=(total*attack[i]);
-               if (sum>= h)
+               if (sum>= h)   //To Avoid Signed integer overflow Error!
             {
                 break;
             }
